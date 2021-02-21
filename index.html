@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Pricing Component with Toggle Master</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 100px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="txt-accent">Our Pricing</h1>
+    <div class="pricing-option">
+      <p>Annually</p>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="toggle">
+          <span class="slider round bg-primary"></span>
+        </label>
+      </div>
+      <p>Monthly</p>
+    </div>
+  </header>
+  <div class="cards">
+    <div class="card bg-light txt-accent">
+      <p>Basic</p>
+      <h1 class="txt-primary"><span class="dollar-sign">$</span><span class="price">199.99</span></h1>
+      <div class="items">
+        <p>500 GB Storage</p>
+        <p>2 Users Allowed</p>
+        <p>Send up to 3 GB</p>
+      </div>
+      <button class="btn bg-primary txt-light">LEARN MORE</button>
+    </div>
+    <div class="card bg-primary txt-light larger">
+      <p>Professional</p>
+      <h1><span class="dollar-sign">$</span><span class="price">249.99</span></h1>
+      <div class="items">
+        <p>1 TB Storage</p>
+        <p>5 Users Allowed</p>
+        <p>Send up to 10 GB</p></div>
+      <button class="btn btn-primary bg-light txt-primary">LEARN MORE</button>
+    </div>
+    <div class="card bg-light txt-accent">
+      <p>Master</p>
+      <h1 class="txt-primary"><span class="dollar-sign">$</span><span class="price">399.99</span></h1>
+      <div class="items">
+        <p>2 TB Storage</p>
+        <p>10 Users Allowed</p>
+        <p>Send up to 20 GB</p></div>
+      <button class="btn bg-primary txt-light">LEARN MORE</button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/gauranajose">Jose Gaurana</a>.
+  </div>
+</body>
+</html>
